@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fontes em CSS</title>
+
+  <style>
+
+    body {
+      font-family: ;
+      /* Medidas Absolutas
+      px (recomendada oficialmente),
+      cm, mm, in (polegadas), pt, pc
+      
+      Medidas Relativas
+      em (recomendada oficialmente) (altura da letra M maiuscula da fonte), 
+      ex (altura da letra x minuscula da fonte), 
+      rem, vw, vh, % */
+
+      font-size: 1em ; /* <16px = 1em> eh geralmente o tamanho padrão da fonte */
+      font-weight: ;
+      /* weight (peso) (lighter, normal, bold, bolder) (100-900)
+       width (largura) height (altura) */
+      font-style: ; 
+      /* italic */
+      text-decoration:  ;
+      /* underline (sublinhado) */
+
+    }
+
+    h1 {
+
+      /*
+
+      Forma padrão:
+      
+      font-family: ;
+      font-weight: bolder; (Não funciona para fontes mais comuns, ex: arial, verdana, etc)
+      font-size: 2em;
+      font-style: italic;*/
+
+      /* shorthand font: 
+      font-style -> font-weight -> font-size -> font-family 
+      (Não precisa ter todas as propriedades, mas a sequência deve ser seguida) */
+      font: italic bolder 2em arial, sans-serif;
+
+    }
+
+  </style>
+</head>
+<body>
+  <h1>Trabalhando com Fontes</h1>
+  <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Pariatur debitis, aut rem consequuntur illum, in, natus non necessitatibus quaerat dolorum alias nobis assumenda temporibus? Illo amet nisi assumenda et quae.</p>
+  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Odio autem laboriosam iste pariatur iusto necessitatibus, officia nobis ipsum laborum repellendus quo, dicta at vero laudantium porro reprehenderit aliquid molestias quasi.</p>
+  <h2>Subtitulo do exercicio</h2>
+  <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Laboriosam dignissimos quo neque sed sit delectus eius cupiditate ad, consequatur doloribus deserunt repellendus molestias, dolor, a quibusdam? Incidunt mollitia accusamus reprehenderit.</p>
+</body>
+</html>
