@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio 014</title>
+    <style>
+      body{
+        font-family: Arial, Helvetica, sans-serif;
+      }
+
+      table{
+        border-collapse: collapse;
+      }
+
+      th, td{
+        border: 1px solid black;
+        padding: 10px;
+      }
+      
+      .mediatotal{
+        background-color: gray;
+        text-align: left;
+        font-weight: bold;
+      }
+    </style>
+  </head>
+  <body>
+    <table>
+      <thead>
+        <th rowspan="2" scope="col">Área</th>
+        <th rowspan="2" scope="col">Disciplinas</th>
+        <th scope="colgroup" colspan="2">Notas</th>
+        <th rowspan="2" scope="col">Média</th>
+        
+
+        <tr>
+          <th scope="col">Nota 1</th>
+          <th scope="col">Nota 2</th>
+        </tr>
+      </thead>
+      <tbody>
+        <th rowspan="4" scope="rowgroup">Exatas</th>
+        <td>Matemática</td>
+        <td>0.0</td>
+        <td>0.0</td>
+        <td>0.0</td>
+
+        <tr>
+          <td>Física</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+        </tr>
+
+        <tr>
+          <td>Química</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+
+          <tr>
+            <td>Biologia</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+          </tr>
+
+          <tr>
+            <th colspan="4" class="mediatotal" scope="row">Média de Exatas</th>
+            <td class="mediatotal">0.0</td>
+          </tr>
+
+          <tr>
+            <th rowspan="3">Humanas</th></tr>
+            <td>História</td>
+            <td>0.0</td>
+            <td>0.0</td>
+            <td>0.0</td>
+        </tr>
+
+        <tr>
+          <td>Geografia</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          <td>0.0</td>
+          
+        </tr>
+
+        <tr>
+          <th colspan="4" class="mediatotal" scope="row">Média de Humanas</th>
+          <td class="mediatotal">0.0</td>
+        </tr>
+      </tbody>
+    </table>
+  </body>
+</html>
