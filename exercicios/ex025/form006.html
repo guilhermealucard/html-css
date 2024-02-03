@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formularios</title>
+  </head>
+  <body>
+    <h1>Teste de Formulario</h1>
+    <form action="cadastro.php" method="post" autocomplete="on">
+
+      <p><label for="id-cor">Cor:</label></p>
+      <input type="color" name="cor" id="id-cor" value="#00ff00">
+      
+      <p> <label for="id-nivel">Nível de Satisfação:</label></p>
+          <input type="range" name="nivel" id="id-nivel" min="1" max="5" value="5">
+
+      <p>
+        <label for="id-foto">Foto do Perfil:</label>
+        <input type="file" name="foto" id="id-foto"> 
+        <!--AO UTILIZAR O INPUT TYPE "file" sempre utilizar o method:post do <form>-->
+      </p>
+      <p>
+        <input type="submit" value="Enviar">
+        <input type="reset" value="Limpar">
+
+      </p>
+    </form>
+  </body>
+</html>
