@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Desafio Formulários</title>
+    <style>
+      * {
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      h1 {
+        text-align: center;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+      }
+      .input-line {
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 15px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Formulário de Inscrição</h1>
+    <form action="cadastro.php" method="post">
+      <fieldset>
+        <legend>Dados Pessoais</legend>
+        <div class="input-line">
+          <label for="id-nome">Nome:</label>
+          <input
+            type="text"
+            name="nome"
+            id="id-nome"
+            placeholder="Digite seu nome"
+            required
+          />
+        </div>
+
+        <div class="input-line">
+          <label for="id-sobrenome">Sobrenome:</label>
+          <input
+            type="text"
+            name="sobrenome"
+            id="id-sobrenome"
+            placeholder="Digite seu sobrenome"
+            required
+          />
+        </div>
+
+        <div class="input-line">
+          <fieldset style="width: 98px">
+            <legend>Sexo</legend>
+            <input type="radio" name="sexo" id="sexmasc" required />
+            <label for="sexmasc">Masculino</label>
+            <input type="radio" name="sexo" id="sexfem" required />
+            <label for="sexfem">Feminino</label>
+          </fieldset>
+        </div>
+
+        <div class="input-line">
+          <label for="idnasc">Data de Nascimento</label>
+          <input type="date" name="nasc" id="idnasc" required />
+        </div>
+
+        <div class="input-line">
+          <label for="id-est">Selecione seu Estado</label>
+          <select name="est" id="id-est">
+            <option value="" selected disabled>--- Escolha ---</option>
+            <optgroup label="Região Norte">
+              <option value="AC">Acre</option>
+              <option value="AP">Amapá</option>
+              <option value="AM">Amazonas</option>
+              <option value="PA">Pará</option>
+              <option value="RO">Rondônia</option>
+              <option value="RR">Roraima</option>
+              <option value="TO">Tocantins</option>
+            </optgroup>
+            <optgroup label="Região Nordeste">
+              <option value="AL">Alagoas</option>
+              <option value="BA">Bahia</option>
+              <option value="CE">Ceará</option>
+              <option value="MA">Maranhão</option>
+              <option value="PB">Paraíba</option>
+              <option value="PE">Pernambuco</option>
+              <option value="PI">Piauí</option>
+              <option value="RN">Rio Grande do Norte</option>
+              <option value="SE">Sergipe</option>
+            </optgroup>
+            <optgroup label="Região Centro-Oeste">
+              <option value="DF">Distrito Federal</option>
+              <option value="GO">Goiás</option>
+              <option value="MT">Mato Grosso</option>
+              <option value="MS">Mato Grosso do Sul</option>
+            </optgroup>
+            <optgroup label="Região Sudeste">
+              <option value="ES">Espírito Santo</option>
+              <option value="MG">Minas Gerais</option>
+              <option value="RJ">Rio de Janeiro</option>
+              <option value="SP">São Paulo</option>
+            </optgroup>
+            <optgroup label="Região Sul">
+              <option value="PR">Paraná</option>
+              <option value="RS">Rio Grande do Sul</option>
+              <option value="SC">Santa Catarina</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="input-line">
+          <label for="idfoto">Envie uma foto:</label>
+          <input
+            type="file"
+            name="foto"
+            id="id-foto"
+            accept="image/*"
+            required
+          />
+        </div>
+
+        <div class="input-line">
+          <label for="iprof">Profissão</label>
+          <input type="text" name="prof" id="idprof" />
+          <datalist id="idprof">
+             
+          </datalist>
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Contatos</legend>
+        <div class="input-line">
+          <label for="id-tel">Telefone</label>
+          <input
+            required
+            type="tel"
+            name="tel"
+            id="id-tel"
+            pattern="\([0-9]{2}\)[0-9]{4,6}-[0-9]{4}"
+            placeholder="(XX) XXXX-XXXX"
+            required
+          />
+        </div>
+        <div class="input-line">
+          <label for="id-email">E-mail:</label>
+          <input type="email" name="email" id="id-email" required />
+        </div>
+      </fieldset>
+
+      <fieldset>
+        <legend>Outras Opções</legend>
+        <div class="input-line">
+          <label for="id-dia">Dia e Hora da Inscrição</label>
+          <input type="datetime-local" name="dia" id="id-dia" required />
+        </div>
+        <div class="input-line">
+          <label for="id-cor">Cor favorita:</label>
+          <input type="color" name="cor" id="id-cor" />
+        </div>
+        <div class="input-line">
+          <label for="ifav">Nível de Satisfação:</label>
+          <input
+            type="range"
+            name="fav"
+            id="ifav"
+            required
+            value="5"
+            min="0"
+            max="10"
+          />
+        </div>
+      </fieldset>
+
+      <div class="input-line">
+        <fieldset>
+          <legend>
+            Para finalizar seu cadastro, digite sua senha do portal:
+          </legend>
+          <label for="id-senha">Senha:</label>
+          <input
+            type="password"
+            name="senha"
+            id="id-senha"
+            required
+            size="10"
+            minlength="8"
+            maxlength="16"
+          />
+        </fieldset>
+      </div>
+
+      <div>
+        <input type="submit" value="Enviar" />
+        <input type="reset" value="Limpar" />
+      </div>
+    </form>
+  </body>
+</html>
