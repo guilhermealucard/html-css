@@ -30,6 +30,8 @@ Extra large devices (laptops e desktops grandes, acima de 1200px): @media only s
     color: black;
   }
 
+  
+
   main::after {
     content: 'Essa impressão foi feita no site www.cursoemvideo.com';
     text-decoration: overline;
@@ -57,6 +59,14 @@ Extra large devices (laptops e desktops grandes, acima de 1200px): @media only s
     background-image: url(../imagens/back-tablet.jpg);
   }
 
+  h2::after{
+    content: 'Versão Tablet';
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+
+  }
+
   img#phone {
     display: none;
   }
@@ -77,6 +87,14 @@ Extra large devices (laptops e desktops grandes, acima de 1200px): @media only s
 @media screen and (min-width: 991px) and (max-width: 1200px) /* DESKTOP (large devices) */ {
   body {
     background-image: url(../imagens/back-pc.jpg);
+  }
+
+  h2::after{
+    content: 'Versão PC';
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+
   }
 
   img#phone {
@@ -104,6 +122,15 @@ Extra large devices (laptops e desktops grandes, acima de 1200px): @media only s
   main {
     width: 700px;
   }
+
+  h2::after{
+    content: 'Versão Telas Grandes';
+    display: block;
+    text-align: center;
+    padding-top: 10px;
+
+  }
+
   img#phone {
     display: none;
   }

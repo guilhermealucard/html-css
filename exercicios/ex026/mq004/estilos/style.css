@@ -37,6 +37,13 @@ h1{
   text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.493);
 }
 
+h2::after{
+  content: 'Versão Smartphone';
+  display: block;
+  text-align: center;
+  padding-top: 10px;
+}
+
 img {
   display: block;
   margin: auto;
