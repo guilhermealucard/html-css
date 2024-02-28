@@ -17,8 +17,23 @@ header > h1{
   text-align: center;
 }
 
-nav{
+span#burguer{
+  background-color: rgb(48, 48, 48);
+  color: white;
+  width: 90vw;
   display: block;
+  text-align: center;
+  padding: 10px;
+}
+
+span#burguer:hover{
+  background-color: white;
+  color: black;
+  cursor: pointer;
+}
+
+nav{
+  display: none;
 }
 
 nav > li{
