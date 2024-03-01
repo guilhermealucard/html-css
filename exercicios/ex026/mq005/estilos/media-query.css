@@ -1,0 +1,31 @@
+@charset "UTF-8";
+
+/*Typical Device Breakpoints
+
+Extra small devices (telefones, até 600px): 
+
+Small devices (tablets em modo retrato e telefones grandes, de 600px a 767px): 
+
+Medium devices (tablets em modo paisagem, de 768px a 991px)
+
+Large devices (laptops/desktops, de 992px a 1199px)
+
+Extra large devices (laptops e desktops grandes, acima de 1200px): */
+
+@media screen and (min-width: 768px){
+  span#burguer{
+    display: none;
+  }
+  nav{
+    display: block;
+  }
+  nav > ul > li{
+    display: inline-block;
+  }
+
+  main{
+    width: 768px;
+  }
+}
+
+
