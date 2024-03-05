@@ -18,9 +18,12 @@ Extra large devices (laptops e desktops grandes, acima de 1200px): */
   }
   nav{
     display: block;
+    text-align: center;
+    
   }
   nav > ul > li{
     display: inline-block;
+    
   }
 
   main{
